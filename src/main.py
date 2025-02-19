@@ -1,7 +1,7 @@
 import streamlit as st
 import matplotlib.pyplot as plt
 from PIL import Image
-
+import pandas as pd
 # Set page configuration
 st.set_page_config(page_title="Overview - CitiBike Risk Analysis", layout="wide")
 
@@ -45,23 +45,33 @@ for title, file_name in image_files.items():
     st.image(img, caption=title, use_container_width=True)
     # Explanation for each visualization
     if title == "CitiBike Usage by Weekday vs. Weekend":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - CitiBike usage is significantly higher on weekdays, especially Wednesday to Friday.
-        - Lower usage on weekends suggests different riding behaviors among casual vs. daily commuters.
-        """)
+        with st.container(border=True):
+            
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 4, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Introduce weekend promotions to increase usage.
-        - Adjust bike availability dynamically to match demand trends.
-        """)
-
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Offer weekday vs. weekend insurance plans based on accident risk.
-        - Provide different coverage plans for commuters and casual riders.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("#### Insights from the Chart")
+                st.write("""
+                - CitiBike usage is significantly higher on weekdays, especially Wednesday to Friday.
+                - Lower usage on weekends suggests different riding behaviors among casual vs. daily commuters.
+                """)
+            with col2:
+                st.write("#### How CitiBike Can Improve")
+                st.write("""
+                - Introduce weekend promotions to increase usage.
+                - Adjust bike availability dynamically to match demand trends.
+                """)
+            with col3:
+                st.write("#### How AXA Can Help")
+                st.write("""
+                - Offer weekday vs. weekend insurance plans based on accident risk.
+                - Provide different coverage plans for commuters and casual riders.
+                """)
 
     elif title == "Rides per Hour":
         st.write("### 🔍 Insights from the Chart")
