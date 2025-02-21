@@ -1,4 +1,3 @@
-import streamlit as st
 import matplotlib.pyplot as plt
 from PIL import Image
 import pandas as pd
@@ -34,5 +33,3 @@ st.markdown("""
 AXA, a leading insurance provider, can collaborate with CitiBike by offering **data-driven insurance plans**.
 Analyzing accident risk at different stations allows AXA to create **customized policies** while CitiBike can **enhance safety measures**.
 """)
-
-
