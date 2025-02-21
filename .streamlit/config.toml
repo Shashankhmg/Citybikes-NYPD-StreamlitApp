@@ -1,0 +1,5 @@
+[layout]
+wide = true  # This makes the entire app load in wide mode by default
+
+[client]
+showSidebarNavigation = false
