@@ -1,8 +1,4 @@
 import streamlit as st
-st.set_page_config(
-    page_title="CitiBike Risk Analysis",
-    layout="wide")
-
 import matplotlib.pyplot as plt
 from PIL import Image
 import pandas as pd
