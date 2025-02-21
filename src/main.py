@@ -10,7 +10,19 @@ from pages import risk_prediction
 st.title("🚴‍♂️ CitiBike Usage Insights")
 # Load local configuration
 st.set_option('client.showSidebarNavigation', False)
-#st.set_page_config(page_title="CitiBike Usage Insights", layout="wide")
+# Sidebar with Navigation
+st.sidebar.title("🚲 **CitiBike Risk Dashboard**")
+
+
+
+# Define page names (replace with your actual page names)
+page_names = ["overview.py", "risk_prediction.py","accident_analysis.py"]
+
+# Create the sidebar and set a title
+#st.sidebar.header("🚲 **CitiBike Risk Dashboard**", divider='grey')
+st.sidebar.page_link("pages/overview.py", icon="▪", label= "**Overview**")
+st.sidebar.page_link("pages/risk_prediction.py", icon="▪", label= ":blue[*Risk Prediction*]")
+
 
 
 
@@ -27,17 +39,4 @@ AXA, a leading insurance provider, can collaborate with CitiBike by offering **d
 Analyzing accident risk at different stations allows AXA to create **customized policies** while CitiBike can **enhance safety measures**.
 """)
 
-
-# Sidebar with Navigation
-st.sidebar.title("🚲 **CitiBike Risk Dashboard**")
-
-
-
-# Define page names (replace with your actual page names)
-page_names = ["overview.py", "risk_prediction.py","accident_analysis.py"]
-
-# Create the sidebar and set a title
-#st.sidebar.header("🚲 **CitiBike Risk Dashboard**", divider='grey')
-st.sidebar.page_link("pages/overview.py", icon="▪", label= "**Overview**")
-st.sidebar.page_link("pages/risk_prediction.py", icon="▪", label= ":blue[*Risk Prediction*]")
 
