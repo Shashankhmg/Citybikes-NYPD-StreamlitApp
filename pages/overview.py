@@ -1,4 +1,8 @@
 import streamlit as st
+st.set_page_config(
+    page_title="CitiBike Risk Analysis",
+    layout="wide")
+
 import matplotlib.pyplot as plt
 from PIL import Image
 import pandas as pd
@@ -8,13 +12,13 @@ from sidebar import sidebar
 sidebar()
 # Load images
 image_files = {
-    "CitiBike Usage by Weekday vs. Weekend": "../static/citybikes_usage_weekday_weekend.png",
-    "Rides per Hour": "../static/Rides per Hour.png",
-    "CitiBike Users: Subscribers vs. Casual Riders": "../static/CitiBike Users- Subscribers vs. Casual Riders.png",
-    "Trip Duration Distribution": "../static/Trip Duration Distribution.png",
-    "Top 10 Most Popular Start Stations": "../static/Top 10 Most Popular Start Stations.png",
-    "CitiBike Start Locations (Filtered for NYC)": "../static/CitiBike Start Locations (Filtered for NYC).png",
-    "CitiBike Start vs. End Locations (NYC)": "../static/CitiBike Start vs. End Locations (NYC).png",
+    "CitiBike Usage by Weekday vs. Weekend": "./static/citybikes_usage_weekday_weekend.png",
+    "Rides per Hour": "./static/Rides per Hour.png",
+    "CitiBike Users: Subscribers vs. Casual Riders": "./static/CitiBike Users- Subscribers vs. Casual Riders.png",
+    "Trip Duration Distribution": "./static/Trip Duration Distribution.png",
+    "Top 10 Most Popular Start Stations": "./static/Top 10 Most Popular Start Stations.png",
+    "CitiBike Start Locations (Filtered for NYC)": "./static/CitiBike Start Locations (Filtered for NYC).png",
+    "CitiBike Start vs. End Locations (NYC)": "./static/CitiBike Start vs. End Locations (NYC).png",
 }
  
 for title, file_name in image_files.items():

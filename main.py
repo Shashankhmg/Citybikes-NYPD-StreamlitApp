@@ -2,14 +2,10 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from PIL import Image
 import pandas as pd
-from pages import overview
-from pages import accident_analysis
-from pages import risk_prediction
-
 # Title & Introduction
 st.title("🚴‍♂️ CitiBike Usage Insights")
 # Load local configuration
-st.set_option('client.showSidebarNavigation', False)
+# Set Streamlit page layout to wide mode
 # Sidebar with Navigation
 st.sidebar.title("🚲 **CitiBike Risk Dashboard**")
 
