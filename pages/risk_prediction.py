@@ -61,7 +61,7 @@ input_data = pd.DataFrame({
 #st.write(input_data)
 # Predict
 risk_prediction = model.predict(input_data)[0]
-risk_levels = {1: "🟢 Low Risk", 2: "🟡 Medium Risk", 3: "🔴 High Risk"}
+risk_levels = {1: "🟢 Low Risk", 2: "🟡 Medium Risk", 3: "🔴 High Risk", 4: "🔴🔴 Very High Risk" }
 
 # Display Result
 #st.subheader("🔍 Predicted Risk Level")
