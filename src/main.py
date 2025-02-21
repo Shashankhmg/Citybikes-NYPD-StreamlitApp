@@ -35,22 +35,23 @@ image_files = {
 
 # Display visualizations with better UI
 st.markdown("---")
+ 
 for title, file_name in image_files.items():
+    
     st.subheader(title)
     
     col1, col2 = st.columns([2, 4])  # Adjust column width for better alignment
     
     
     img = Image.open(file_name)
-    st.image(img, caption=title, use_container_width=True)
+    #st.image(img, caption=title, use_container_width=True)
     # Explanation for each visualization
     if title == "CitiBike Usage by Weekday vs. Weekend":
         with st.container(border=True):
-            
             # Center the graph using st.columns()
             col1, col2, col3 = st.columns([1, 4, 1])  # Adjust column proportions
             with col2:  # Center the graph in the middle column
-                st.write(f"**{title}**")
+                #st.write(f"**{title}**")
                 st.image(img, caption=title, use_container_width=True)
 
             col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
@@ -74,118 +75,185 @@ for title, file_name in image_files.items():
                 """)
 
     elif title == "Rides per Hour":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - Peak riding hours occur during **morning (7-9 AM)** and **evening (4-7 PM)** rush hours.
-        - Off-peak hours see significantly lower usage.
-        """)
+        with st.container(border=True):
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 4, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                #st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Allocate more bikes to high-demand areas during peak hours.
-        - Offer incentives for off-peak riding to balance demand.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("### Insights from the Chart")
+                st.write("""
+                - Peak riding hours occur during **morning (7-9 AM)** and **evening (4-7 PM)** rush hours.
+                - Off-peak hours see significantly lower usage.
+                """)
 
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Provide **time-based insurance pricing**, offering higher coverage during peak accident hours.
-        - Promote accident prevention campaigns during rush hours.
-        """)
+            with col2:
+                st.write("### How CitiBike Can Improve")
+                st.write("""
+                - Allocate more bikes to high-demand areas during peak hours.
+                - Offer incentives for off-peak riding to balance demand.
+                """)
+            with col3:
+                st.write("### How AXA Can Help")
+                st.write("""
+                    - Provide **time-based insurance pricing**, offering higher coverage during peak accident hours.
+                    - Promote accident prevention campaigns during rush hours.
+                    """)
 
     elif title == "CitiBike Users: Subscribers vs. Casual Riders":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - **Subscribers dominate CitiBike usage**, making up the majority of rides.
-        - Casual riders make up a smaller portion of total trips.
-        """)
+        with st.container(border=True):
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 2, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                #st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Encourage casual riders to become subscribers through discounts.
-        - Offer more flexible plans for occasional riders.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("### Insights from the Chart")
+                st.write("""
+                - **Subscribers dominate CitiBike usage**, making up the majority of rides.
+                - Casual riders make up a smaller portion of total trips.
+                """)
 
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Provide different insurance coverage for **subscribers vs. casual riders**.
-        - Offer bundle deals for long-term CitiBike users.
-        """)
+            with col2:
+                st.write("### How CitiBike Can Improve")
+                st.write("""
+                    - Encourage casual riders to become subscribers through discounts.
+                    - Offer more flexible plans for occasional riders.
+                    """)
+            with col3:
+                st.write("### How AXA Can Help")
+                st.write("""
+                - Provide different insurance coverage for **subscribers vs. casual riders**.
+                - Offer bundle deals for long-term CitiBike users.
+                """)
 
     elif title == "Trip Duration Distribution":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - Most CitiBike trips are short, averaging **5-15 minutes**.
-        - Few rides exceed 30 minutes.
-        """)
+        with st.container(border=True):
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 2, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                #st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Offer pricing incentives for longer trips.
-        - Increase bike availability for short-duration rides.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("### Insights from the Chart")
+                st.write("""
+                - Most CitiBike trips are short, averaging **5-15 minutes**.
+                - Few rides exceed 30 minutes.
+                """)
 
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Provide micro-duration accident coverage for short trips.
-        - Offer protection plans for longer rides with increased accident exposure.
-        """)
+            with col2:
+                st.write("### How CitiBike Can Improve")
+                st.write("""
+                - Offer pricing incentives for longer trips.
+                - Increase bike availability for short-duration rides.
+                """)
+            with col3:
+                st.write("### How AXA Can Help")
+                st.write("""
+                - Provide micro-duration accident coverage for short trips.
+                - Offer protection plans for longer rides with increased accident exposure.
+                """)
 
     elif title == "Top 10 Most Popular Start Stations":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - Stations in high-traffic areas (e.g., W 21 St & 6 Ave) see the most rides.
-        - Certain neighborhoods have a **higher CitiBike dependency**.
-        """)
+        with st.container(border=True):
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 4, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                #st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Expand high-traffic stations with more docking spaces.
-        - Improve infrastructure around **busiest stations** to reduce congestion.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("### Insights from the Chart")
+                st.write("""
+                - Stations in high-traffic areas (e.g., W 21 St & 6 Ave) see the most rides.
+                - Certain neighborhoods have a **higher CitiBike dependency**.
+                """)
 
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Focus insurance plans around high-traffic stations.
-        - Provide **risk-based pricing for frequently used start locations**.
-        """)
+            with col2:
+                st.write("### How CitiBike Can Improve")
+                st.write("""
+                    - Expand high-traffic stations with more docking spaces.
+                    - Improve infrastructure around **busiest stations** to reduce congestion.
+                    """)
 
+            with col3:
+                st.write("### How AXA Can Help")
+                st.write("""
+                - Focus insurance plans around high-traffic stations.
+                - Provide **risk-based pricing for frequently used start locations**.
+                """)
+        
+
+    
     elif title == "CitiBike Start Locations (Filtered for NYC)":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - CitiBike stations are densely clustered around **Manhattan** and some Brooklyn areas.
-        - Sparse presence in outer boroughs.
-        """)
+        with st.container(border=True):
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 1, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                #st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Expand CitiBike network to underserved areas.
-        - Identify high-demand zones outside the current coverage.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("### Insights from the Chart")
+                st.write("""
+                - CitiBike stations are densely clustered around **Manhattan** and some Brooklyn areas.
+                - Sparse presence in outer boroughs.
+                """)
 
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Work with CitiBike to **assess risk factors** in expansion areas.
-        - Offer coverage for new locations based on accident history.
-        """)
+            with col2:
+                st.write("### How CitiBike Can Improve")
+                st.write("""
+                - Expand CitiBike network to underserved areas.
+                - Identify high-demand zones outside the current coverage.
+                """)
+
+            with col3:
+                st.write("### How AXA Can Help")
+                st.write("""
+                - Work with CitiBike to **assess risk factors** in expansion areas.
+                - Offer coverage for new locations based on accident history.
+                """)
+
 
     elif title == "CitiBike Start vs. End Locations (NYC)":
-        st.write("### 🔍 Insights from the Chart")
-        st.write("""
-        - Most start locations also serve as **end locations**, meaning round trips are common.
-        - Some routes have imbalanced bike drop-offs, leading to station shortages.
-        """)
+        with st.container(border=True):
+            # Center the graph using st.columns()
+            col1, col2, col3 = st.columns([1, 1, 1])  # Adjust column proportions
+            with col2:  # Center the graph in the middle column
+                #st.write(f"**{title}**")
+                st.image(img, caption=title, use_container_width=True)
 
-        st.write("### 🚲 How CitiBike Can Improve")
-        st.write("""
-        - Use dynamic bike rebalancing to **prevent shortages** at busy stations.
-        - Offer incentives for riders to return bikes to high-demand areas.
-        """)
+            col1, col2, col3 = st.columns([2, 2, 2])  # Adjust column proportions
+            with col1:
+                st.write("### Insights from the Chart")
+                st.write("""
+                - Most start locations also serve as **end locations**, meaning round trips are common.
+                - Some routes have imbalanced bike drop-offs, leading to station shortages.
+                """)
 
-        st.write("### 💡 How AXA Can Help")
-        st.write("""
-        - Provide **route-specific insurance pricing** for high-traffic areas.
-        - Identify risky routes based on trip start and end patterns.
-        """)
+            with col2:
+                st.write("### How CitiBike Can Improve")
+                st.write("""
+                - Use dynamic bike rebalancing to **prevent shortages** at busy stations.
+                - Offer incentives for riders to return bikes to high-demand areas.
+                """)
+
+
+            with col3:
+                st.write("### How AXA Can Help")
+                st.write("""
+                - Provide **route-specific insurance pricing** for high-traffic areas.
+                - Identify risky routes based on trip start and end patterns.
+                """)
 
 # Final insights
 st.header("🚀 Key Takeaways")
