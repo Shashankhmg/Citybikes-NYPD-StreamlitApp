@@ -3,6 +3,10 @@ import pandas as pd
 import joblib
 import numpy as np
 import json
+from sidebar import sidebar
+
+sidebar()
+
 # Load model & station risk data
 model = joblib.load("./models/DT.joblib")
 # Load preprocessed station data from JSON 
@@ -67,7 +71,7 @@ st.warning("This prediction is based on historical accident data, station risk l
 st.warning("⚠️ **Warning:** Some CitiBike stations are located in high-accident zones. Ride safely and stay alert! 🚲")
 
 # Load the HTML file
-heatmap_path = "/Users/shashankhmg/Documents/AXA-Casestudy/Citybikes-NYPD-StreamlitApp/data/optimized_citibike_accident_heatmap.html"
+heatmap_path = "./data/optimized_citibike_accident_heatmap.html"
 
 
 ### **Key Takeaway:**  
