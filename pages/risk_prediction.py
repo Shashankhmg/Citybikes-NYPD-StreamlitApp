@@ -4,9 +4,9 @@ import joblib
 import numpy as np
 import json
 # Load model & station risk data
-model = joblib.load("../models/DT.joblib")
+model = joblib.load("./models/DT.joblib")
 # Load preprocessed station data from JSON 
-with open("/Users/shashankhmg/Documents/AXA-Casestudy/Citybikes-NYPD-StreamlitApp/data/station_data.json", "r") as f:
+with open("./data/station_data.json", "r") as f:
     station_map = json.load(f)
 
 # Title
