@@ -8,24 +8,19 @@ import json
 import os
 import zipfile
 import joblib
+from huggingface_hub import hf_hub_download, login
 sidebar()
 
-# Local paths
-MODEL_ZIP_PATH = "/Users/shashankhmg/Documents/AXA-Casestudy/Citybikes-NYPD-StreamlitApp/models/RF.joblib.zip"
-MODEL_EXTRACT_PATH = "models"
-MODEL_FILE_PATH = os.path.join(MODEL_EXTRACT_PATH, "RF.joblib")
+HF_TOKEN = st.secrets["HF_TOKEN"]
+login(HF_TOKEN)
 
-# Function to extract model if not already extracted
-def extract_model():
-    if not os.path.exists(MODEL_FILE_PATH):  # Only extract if not already done
-        st.write("Extracting model...")
-        with zipfile.ZipFile(MODEL_ZIP_PATH, "r") as zip_ref:
-            zip_ref.extractall(MODEL_EXTRACT_PATH)
-        st.write("Model extracted!")
+# Load model from Hugging Face
+@st.cache_resource  # Cache the model to avoid reloading it on every run
+def load_model():
+    model_path = hf_hub_download(repo_id="Shashankhmg/citybike-demnd-prediction", filename="RF.joblib")
+    return joblib.load(model_path)
 
-# Extract and load model
-extract_model()
-model = joblib.load(MODEL_FILE_PATH)
+model = load_model()
 st.write("Model loaded successfully!")
 
 # Load station data from JSON
