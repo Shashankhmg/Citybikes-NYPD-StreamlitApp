@@ -2,8 +2,6 @@
 
 This repository contains an interactive **Streamlit web application** built as part of the **AXA Data Science Challenge**. Instead of a traditional presentation, I developed this application to provide a hands-on, dynamic experience of my analysis and predictive models.
 
----
-
 ## Overview 
 The application consists of the following sections:
 
