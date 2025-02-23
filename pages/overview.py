@@ -263,7 +263,7 @@ for title, file_name in image_files.items():
                 """)
 
 # Final insights
-st.header("🚀 Key Takeaways")
+st.header("Key Takeaways")
 st.write("""
 By analyzing CitiBike's data, we can:
 1. Identify high-risk areas for **better safety measures**.
