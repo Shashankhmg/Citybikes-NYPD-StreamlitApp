@@ -21,6 +21,7 @@ station_names = list(station_data.keys())  # Extract only station names for drop
 
 # Title
 st.title("🚲 CitiBike Demand Prediction")
+st.markdown("*Expected demand (number of trips) at a CitiBike station at a given date & time*")
 st.subheader("Enter Ride Details")
 
 # Create input form
