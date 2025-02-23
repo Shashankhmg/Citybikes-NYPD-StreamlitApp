@@ -68,7 +68,7 @@ How It Works?
 - The user selects a **station** and provides a **future date & time**.
 - The **regression model** predicts the **average number of trips expected** at that station.
 - The model is trained using **historical CitiBike data** with features like **time of day, rush hour, rolling averages, and station popularity**.
-- The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to [Hugging Face Models](https://huggingface.co/Shashankhmg/citybike-demnd-prediction)s & served via a FastAPI endpoint on Railway**([Github Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecast).
+- The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to [Hugging Face Models](https://huggingface.co/Shashankhmg/citybike-demnd-prediction)s & served via a FastAPI endpoint on Railway**([Github Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecast)).
 
 🔗 **GitHub Repository for the Model API**: [Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecast)
 
