@@ -69,11 +69,9 @@ How It Works?
 - The user selects a **station** and provides a **future date & time**.
 - The **regression model** predicts the **average number of trips expected** at that station.
 - The model is trained using **historical CitiBike data** with features like **time of day, rush hour, rolling averages, and station popularity**.
-- The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to GitHub Models & served via a FastAPI endpoint on Railway**.
+- The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to [Hugging Face Models](https://huggingface.co/Shashankhmg/citybike-demnd-prediction)s & served via a [FastAPI endpoint on Railway]**.
 
 🔗 **GitHub Repository for the Model API**: [Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecase)
-
----
 
 ## 🛠️ Tech Stack & Deployment
 - **Frontend:** Streamlit  
@@ -83,7 +81,7 @@ How It Works?
 - **Hosting:** Streamlit Cloud, Railway  
 - **Model Storage:** Hugging Face Hub
 
----
+For users interested in more technical details about the backend data processing, machine learning models, and API integration, please visit the GitHub repository: [Repo](https://github.com/Shashankhmg/Data-Science-Challenge)
 
 ## How to Run the App Locally?
 
