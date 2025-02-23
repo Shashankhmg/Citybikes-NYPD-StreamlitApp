@@ -71,7 +71,7 @@ How It Works?
 - The model is trained using **historical CitiBike data** with features like **time of day, rush hour, rolling averages, and station popularity**.
 - The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to [Hugging Face Models](https://huggingface.co/Shashankhmg/citybike-demnd-prediction)s & served via a [FastAPI endpoint on Railway]**.
 
-🔗 **GitHub Repository for the Model API**: [Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecase)
+🔗 **GitHub Repository for the Model API**: [Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecast)
 
 ## 🛠️ Tech Stack & Deployment
 - **Frontend:** Streamlit  
