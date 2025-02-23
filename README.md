@@ -1,3 +1,7 @@
+Live Demo
+
+Click here to access the Streamlit application(https://citybikes-nypd-appapp.streamlit.app/)
+
 # **🚲 AXA Data Science Challenge - Interactive Streamlit Application**  
 
 This repository contains an interactive **Streamlit web application** built as part of the **AXA Data Science Challenge**. Instead of a traditional presentation, I developed this application to provide a hands-on, dynamic experience of my analysis and predictive models.
@@ -67,7 +71,7 @@ How It Works?
 - The model is trained using **historical CitiBike data** with features like **time of day, rush hour, rolling averages, and station popularity**.
 - The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to GitHub Models & served via a FastAPI endpoint on Railway**.
 
-🔗 **GitHub Repository for the Model API**: [Link Here](#) *([Add actual repo link](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecase))*  
+🔗 **GitHub Repository for the Model API**: [Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecase)
 
 ---
 
