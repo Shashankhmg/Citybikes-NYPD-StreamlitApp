@@ -41,7 +41,7 @@ with col2:
     """
     <div class="justified-text">
         I am a <b>Data Science enthusiast</b> with a background in <b>engineering and AI</b>, currently pursuing my Master's in <b>Digital Engineering</b> at Otto von Guericke University, Magdeburg. 
-        My expertise lies in <b>machine learning, AI-driven automation, and large-scale data processing</b>, with a strong inclination toward <b>innovation and research-driven problem-solving</b>.  
+        My expertise lies in <b>machine learning, AI-driven automation, and large-scale data processing</b>, with a strong inclination towards <b>innovation and research-driven problem-solving</b>.  
     """,
     unsafe_allow_html=True
 )
