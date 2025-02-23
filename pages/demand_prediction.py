@@ -109,3 +109,49 @@ with st.form("demand_form"):
 
             except Exception as e:
                 st.error(f" API Request Failed! Error: {e}")
+
+
+
+st.markdown("---")
+st.markdown("""
+    <style>
+        .justified-text {
+            text-align: justify;
+        }
+    </style>
+""", unsafe_allow_html=True)
+
+st.markdown("## Insights from the Demand Forecasting Model")
+
+# Set the page title
+with st.container(border=True):
+    col1, col2 = st.columns([2, 1.5])  # Adjust column proportions
+
+
+    with col1:
+        st.markdown("""
+            ### How CitiBike Can Improve
+            <div class="justified-text">
+                <ul>
+                    <li>Optimized Bike Availability & Fleet Management.</li>
+                    <li>Improved Station Planning & Expansion.</li>
+                    <li>Enhanced Rider Safety & Accident Prevention.</li>
+                    <li>Personalized Promotions & Pricing Strategies.</li>
+                    <li>Data-Driven Partnerships & Monetization Opportunities.</li>
+                </ul>
+            </div>
+        """, unsafe_allow_html=True)
+
+    with col2:
+        st.markdown("""
+            ### How AXA Can Help
+            <div class="justified-text">
+                <ul>
+                    <li>Smart & Dynamic Insurance Pricing.</li>
+                    <li>Exclusive Mobility Insurance Solutions.</li>
+                    <li>Corporate Social Responsibility & Safer Cities.</li>
+                    <li>Reduced Insurance Fraud & Claim Validation.</li>
+                </ul>
+            </div>
+        """, unsafe_allow_html=True)
+
