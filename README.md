@@ -14,7 +14,6 @@ This page provides:
 - An overview of **my background** and experience.
 - A brief **introduction to the challenge** and its objectives.
 - Insights into how **AXA and CitiBike** can collaborate for data-driven decision-making.
-- Analysis of **CitiBike usage patterns along with NYPD accident data** to assess risks.
 
 ### 2. CitiBike & NYPD Data Analysis
 This section presents the **Exploratory Data Analysis (EDA)** results of the **CitiBike dataset** (January 2025) along with **NYPD accident data** to evaluate accident risk at different locations.  
@@ -69,7 +68,7 @@ How It Works?
 - The user selects a **station** and provides a **future date & time**.
 - The **regression model** predicts the **average number of trips expected** at that station.
 - The model is trained using **historical CitiBike data** with features like **time of day, rush hour, rolling averages, and station popularity**.
-- The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to [Hugging Face Models](https://huggingface.co/Shashankhmg/citybike-demnd-prediction)s & served via a [FastAPI endpoint on Railway]**.
+- The **trained model is too large (2.5GB)** to store locally, so it's **uploaded to [Hugging Face Models](https://huggingface.co/Shashankhmg/citybike-demnd-prediction)s & served via a FastAPI endpoint on Railway**([Github Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecast).
 
 🔗 **GitHub Repository for the Model API**: [Repo](https://github.com/Shashankhmg/Fastapi-Citybike-Demand-Forecast)
 
