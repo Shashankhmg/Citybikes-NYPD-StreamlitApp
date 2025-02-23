@@ -5,14 +5,14 @@ This repository contains an interactive **Streamlit web application** built as p
 ## Overview 
 The application consists of the following sections:
 
-### 1. Introduction Page**  
+### 1. Introduction Page
 This page provides:
 - An overview of **my background** and experience.
 - A brief **introduction to the challenge** and its objectives.
 - Insights into how **AXA and CitiBike** can collaborate for data-driven decision-making.
 - Analysis of **CitiBike usage patterns along with NYPD accident data** to assess risks.
 
-### 2. CitiBike & NYPD Data Analysis**  
+### 2. CitiBike & NYPD Data Analysis
 This section presents the **Exploratory Data Analysis (EDA)** results of the **CitiBike dataset** (January 2025) along with **NYPD accident data** to evaluate accident risk at different locations.  
 
 📂 [Download the dataset here](https://s3.amazonaws.com/tripdata/index.html) 
