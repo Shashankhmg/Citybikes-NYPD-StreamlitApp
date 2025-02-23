@@ -16,6 +16,8 @@ with open("./data/station_data.json", "r") as f:
 
 # Title
 st.title("CitiBike Risk Prediction")
+st.markdown("*Predicts the risk involved at a Citybike Station at a particular time (Present day)*")
+
 # Define example cases for different risk levels
 example_cases = pd.DataFrame({
     "Start Station": ["W 36 St & 7 Ave", "W 31 St & 7 Ave", "W 41 St & 8 Ave", "11 Ave & W 41 St"],

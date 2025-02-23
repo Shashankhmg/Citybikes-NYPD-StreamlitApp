@@ -263,14 +263,4 @@ for title, file_name in image_files.items():
                 """)
 
 # Final insights
-st.header("Key Takeaways")
-st.write("""
-By analyzing CitiBike's data, we can:
-1. Identify high-risk areas for **better safety measures**.
-2. Improve CitiBike's operations with **demand-based strategies**.
-3. Create **customized insurance** offerings with AXA, benefiting both riders and CitiBike.
-
-This case study offers actionable insights for CitiBike & AXA to optimize their collaboration. 🚴‍♂️💡
-""")
-
 st.success("This analysis provides actionable insights for both CitiBike and AXA to enhance safety and business collaboration.")

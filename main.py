@@ -74,7 +74,7 @@ st.markdown(
             <li>Develop a <b>risk prediction model</b> to enhance rider safety.</li>
             <li>Provide <b>actionable insights</b> for CitiBike and AXA to improve service quality and <b>tailor insurance offerings</b>.</li>
         </ul>
-        By bridging <b>mobility data with insurance intelligence</b>, this study seeks to <b>enhance CitiBike's operational efficiency</b> and <b>empower AXA to create better coverage solutions for urban cyclists</b>. 🚴‍♂️🔍
+        By bridging <b>mobility data with insurance intelligence</b>, this study seeks to <b>enhance CitiBike's operational efficiency</b> and <b>empower AXA to create better coverage solutions for urban cyclists</b>. 
     </div>
     """,
     unsafe_allow_html=True
