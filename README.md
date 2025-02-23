@@ -44,7 +44,7 @@ This module predicts the **risk level for a user** based on specific input featu
 
 - The user provides **minimal inputs**, while additional station-specific details are fetched dynamically from a **pre-processed JSON file** in the backend.
 
-### 4. Demand Prediction**  
+### 4. Demand Prediction
 This module predicts the **expected demand (number of trips) at a CitiBike station** at a given date & time.  
 
 #### Input Features for Demand Model:
@@ -71,9 +71,9 @@ How It Works?
 
 ---
 
-## 🛠️ Tech Stack & Deployment**  
+## 🛠️ Tech Stack & Deployment
 - **Frontend:** Streamlit  
-- **Backend:** FastAPI (Railway), python  
+- **Backend:** FastAPI (Railway)  
 - **Data Processing:** Pandas, NumPy  
 - **Machine Learning:** Scikit-Learn  
 - **Hosting:** Streamlit Cloud, Railway  
@@ -81,7 +81,7 @@ How It Works?
 
 ---
 
-## ** How to Run the App Locally?**  
+## How to Run the App Locally?
 
 ### **1. Clone the Repository**  
 ```bash
