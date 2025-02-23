@@ -13,8 +13,9 @@ page_names = ["overview.py", "risk_prediction.py","accident_analysis.py"]
 
 # Create the sidebar and set a title
 #st.sidebar.header("🚲 **CitiBike Risk Dashboard**", divider='grey')
-st.sidebar.page_link("pages/overview.py", icon="▪", label= "**CitiBike Data Analysis**")
+st.sidebar.page_link("pages/overview.py", icon="▪", label= ":blue[*CitiBike Data Analysis*]")
 st.sidebar.page_link("pages/risk_prediction.py", icon="▪", label= ":blue[*CitiBike Risk Prediction*]")
+st.sidebar.page_link("pages/demand_prediction.py", icon="▪", label = ":blue[*Demand Prediction*]")
 
 # Custom CSS for text justification
 st.markdown(
