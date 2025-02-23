@@ -1,6 +1,6 @@
 Live Demo
 
-Click here to access the Streamlit application(https://citybikes-nypd-appapp.streamlit.app/)
+[Click here to access the Streamlit application](https://citybikes-nypd-appapp.streamlit.app/)
 
 # **🚲 AXA Data Science Challenge - Interactive Streamlit Application**  
 
