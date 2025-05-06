@@ -2,7 +2,7 @@
 
 [Click here to access the Streamlit application](https://citybikes-nypd-appapp.streamlit.app/)
 
-# **🚲 AXA Data Science Challenge - Interactive Streamlit Application**  
+# **🚲 Data Science Challenge - Interactive Streamlit Application**  
 
 This repository contains an interactive **Streamlit web application** built as part of the **AXA Data Science Challenge**. Instead of a traditional presentation, I developed this application to provide a hands-on, dynamic experience of my analysis and predictive models.
 
